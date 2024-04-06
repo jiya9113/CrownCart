@@ -10,14 +10,12 @@ export const CheckoutItemContainer = styled.div`
   align-items: center;
 `
 export const ImageContainer = styled.div`
-  .image-container {
-    width: 23%;
-    padding-right: 15px;
+  width: 23%;
+  padding-right: 15px;
 
-    img {
-      width: 100%;
-      height: 100%;
-    }
+  img {
+    width: 100%;
+    height: 100%;
   }
 `
 
