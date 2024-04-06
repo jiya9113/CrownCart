@@ -1,9 +1,10 @@
 import { Routes,Route } from 'react-router';
 
-import Navigation from './components/routes/navigation/navigation';
-import Home from './components/routes/home/home';
-import Shop from './components/routes/shop/shop';
-import SignIn from './components/routes/sign-in/sign-in';
+import Navigation from './routes/navigation/navigation';
+import Home from './routes/home/home';
+import Shop from './routes/shop/shop';
+import Authentication from './routes/authentication/authentication';
+import Checkout from './routes/checkout/checkout';
 
 import './App.css';
 
@@ -12,8 +13,9 @@ const App = () => {
     <Routes>
       <Route path='/' element={<Navigation/>}>
         <Route index element={<Home/>}/>
-        <Route path='shop' element={<Shop/>}/>
-        <Route path='sign-in' element={<SignIn/>}/>
+        <Route path='shop/*' element={<Shop/>}/>
+        <Route path='authentication' element={<Authentication/>}/>
+        <Route path='checkout' element={<Checkout/>}/>
       </Route>
     </Routes>
   )
